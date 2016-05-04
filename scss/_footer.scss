@@ -1,5 +1,11 @@
 #footer {
   background-color: rgb(41, 37, 37);
-  height: 300px;
   color: lightgrey;
+  padding: 50px 250px;
+  h1, h2 {
+    color: grey;
+  }
+  h4 {
+    text-align: center;
+  }
 }

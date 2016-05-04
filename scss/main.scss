@@ -7,3 +7,7 @@
 body {
   font-family: 'Source Sans Pro', sans-serif; /* Google Font */
 }
+
+*:focus { /* Gets rid of blue line around input */
+    outline: none;
+}
