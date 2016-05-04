@@ -64,7 +64,7 @@
   #newsletter input[type="text"] {
     border: 1px solid #ddd;
     color: grey;
-    padding: 6px;
+    padding: 10px 15px;
     width: 350px;
     -webkit-border-radius: 10px 0 0 10px;
     -moz-border-radius: 10px 0 0 10px;
@@ -79,10 +79,10 @@
         -ms-border-radius: 5px;
         border-radius: 5px; } }
   #newsletter input[type="submit"] {
-    border: 1px solid #ddd;
-    background-color: transparent;
+    border: none;
+    background-color: #da9021;
     color: white;
-    padding: 6px;
+    padding: 11px;
     width: 150px;
     -webkit-border-radius: 0 10px 10px 0;
     -moz-border-radius: 0 10px 10px 0;
@@ -104,8 +104,7 @@
         background-color: #da9021;
         border: none; } }
   #newsletter input[type="submit"]:hover {
-    background-color: white;
-    color: #a82d2d; }
+    background-color: #e4a64a; }
 
 #team {
   background-color: lightgrey;
@@ -139,7 +138,7 @@
     margin-right: 5px;
     color: lightgrey; }
   #footer #footer-links {
-    margin-top: 25px; }
+    margin: 25px 0 10px 0; }
   #footer #footer-copyright {
     margin: 10px 0 0 0; }
 

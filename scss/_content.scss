@@ -8,7 +8,7 @@
   @media screen and (max-width: 1200px) {
     padding: 50px 0px;
   }
-  
+
 }
 
 #overview {
@@ -50,7 +50,7 @@
   input[type="text"] {
   border: 1px solid #ddd;
   color: grey;
-  padding: 6px;
+  padding: 10px 15px;
   width: 350px;
   @include border-radius(10px 0 0 10px);
   // @include border-radius(5px);
@@ -62,10 +62,10 @@
   }
 
   input[type="submit"] {
-  border: 1px solid #ddd;
-  background-color: transparent;
+  border: none;
+  background-color: #da9021;
   color: white;
-  padding: 6px;
+  padding: 11px;
   width: 150px;
   @include border-radius(0 10px 10px 0);
   @include transition(all 0.2s ease);
@@ -79,8 +79,7 @@
   }
 
   input[type="submit"]:hover {
-    background-color: white;
-    color: rgb(168, 45, 45);
+    background-color: lighten(#da9021, 10%);
 
   }
 }
