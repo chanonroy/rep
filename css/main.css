@@ -51,7 +51,12 @@
 
 #newsletter {
   flex-direction: column;
+  background-image: url("../img/e2.jpg");
+  background-size: 100%;
+  background-position: center;
   background-color: #a82d2d;
+  background-blend-mode: overlay;
+  /* multiply, overlay */
   align-items: center;
   color: white; }
   #newsletter h1 {
@@ -60,7 +65,8 @@
     #newsletter {
       display: block;
       text-align: center;
-      padding: 25px 25px; } }
+      padding: 25px 25px;
+      background-image: none; } }
   #newsletter input[type="text"] {
     border: 1px solid #ddd;
     color: grey;

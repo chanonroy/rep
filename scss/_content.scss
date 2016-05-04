@@ -35,7 +35,14 @@
 
 #newsletter {
   flex-direction: column;
+
+  background-image: url("../img/e2.jpg");
+  background-size: 100%;
+  background-position: center;
+
   background-color: rgb(168, 45, 45);
+  background-blend-mode: overlay; /* multiply, overlay */
+
   align-items: center;
   color: white;
   h1 {
@@ -45,6 +52,8 @@
     display: block;
     text-align: center;
     padding: 25px 25px;
+
+    background-image: none;
   }
 
   input[type="text"] {
