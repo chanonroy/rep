@@ -26,8 +26,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 50px;
-  background-color: lightgrey; }
+  background-color: lightgrey;
+  padding: 50px 100px; }
+  @media screen and (max-width: 1200px) {
+    .container-fluid {
+      padding: 50px 0px; } }
 
 #overview, #team {
   display: block;
@@ -56,7 +59,8 @@
   @media screen and (max-width: 625px) {
     #newsletter {
       display: block;
-      text-align: center; } }
+      text-align: center;
+      padding: 25px 25px; } }
   #newsletter input[type="text"] {
     border: 1px solid #ddd;
     color: grey;
@@ -97,7 +101,7 @@
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         border-radius: 5px;
-        background-color: #55B567;
+        background-color: #da9021;
         border: none; } }
   #newsletter input[type="submit"]:hover {
     background-color: white;
@@ -105,11 +109,7 @@
 
 #team {
   background-color: lightgrey;
-  color: #2b2b2b;
-  padding: 50px 150px; }
-  @media screen and (max-width: 1200px) {
-    #team {
-      padding: 50px 0px; } }
+  color: #2b2b2b; }
   #team .team-member {
     /* team photos */
     margin-top: 25px;
@@ -125,13 +125,23 @@
         width: 100px; } }
 
 #footer {
+  display: block;
   background-color: #292525;
-  color: lightgrey;
-  padding: 50px 250px; }
+  color: grey;
+  padding: 25px 12%; }
+  @media screen and (max-width: 768px) {
+    #footer {
+      padding: 25px 0px;
+      text-align: center; } }
   #footer h1, #footer h2 {
-    color: grey; }
-  #footer h4 {
-    text-align: center; }
+    color: lightgrey; }
+  #footer span {
+    margin-right: 5px;
+    color: lightgrey; }
+  #footer #footer-links {
+    margin-top: 25px; }
+  #footer #footer-copyright {
+    margin: 10px 0 0 0; }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;

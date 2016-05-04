@@ -1,11 +1,26 @@
 #footer {
+  display: block;
   background-color: rgb(41, 37, 37);
-  color: lightgrey;
-  padding: 50px 250px;
-  h1, h2 {
-    color: grey;
-  }
-  h4 {
+  color: grey;
+  padding: 25px 12%;
+  @media screen and (max-width: 768px) {
+    padding: 25px 0px;
     text-align: center;
+  }
+
+  h1, h2 {
+    color: lightgrey;
+  }
+  span {
+    margin-right: 5px;
+    color: lightgrey;
+  }
+
+  #footer-links {
+    margin-top: 25px;
+  }
+
+  #footer-copyright {
+    margin: 10px 0 0 0;
   }
 }
