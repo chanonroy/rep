@@ -1,0 +1,15 @@
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+  /* Background */
+  background: rgb(199, 56, 56);
+  // background: rgb(199, 56, 56) url("../img/jumbo.jpg");
+
+  .jumbo-text {
+    color: white;
+  }
+}

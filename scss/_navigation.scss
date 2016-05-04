@@ -1,0 +1,12 @@
+.navbar-nav { /* Navigation general padding */
+  @media screen and (min-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.navbar-default .navbar-brand {
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+  }
+}
