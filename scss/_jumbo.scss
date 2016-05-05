@@ -2,14 +2,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 100vh;
   margin: 0;
 
   /* Background */
-  background: rgb(199, 56, 56);
-  // background: rgb(199, 56, 56) url("../img/jumbo.jpg");
+  // background-image: url("../img/esports-jumbo.jpg");
+  background-image: url("../img/esports-jumbo-grey.jpg");
+  background-size: 100%;
+  background-position: top center;
+
+  background-color: rgba(45, 113, 168, 0.75);
+  background-blend-mode: overlay; /* multiply, overlay */
 
   .jumbo-text {
     color: white;
+  }
+
+  .jumbo-button {
+    height: 100px;
+    width: 100px;
+    background-color: white;
   }
 }

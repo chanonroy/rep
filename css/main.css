@@ -1,26 +1,61 @@
 /* all 0.5s ease */
 /* (5px) */
+.navbar-default {
+  /* Navigation Bar Colour */
+  background-color: white; }
+
+.navbar-brand {
+  /* Navigation Brand Logo */
+  margin: 0; }
+  @media screen and (max-width: 768px) {
+    .navbar-brand {
+      padding: 10px 0px 10px 15px; } }
+  .navbar-brand img {
+    height: 50px; }
+    @media screen and (max-width: 768px) {
+      .navbar-brand img {
+        height: 35px; } }
+
 .navbar-nav {
-  /* Navigation general padding */ }
+  /* Navigation Link Box Formatting */ }
   @media screen and (min-width: 768px) {
     .navbar-nav {
       padding-top: 15px;
       padding-bottom: 15px; } }
 
-@media screen and (min-width: 768px) {
-  .navbar-default .navbar-brand {
-    margin: 15px; } }
+.navbar-default .navbar-nav > li > a {
+  /* Navigation Links (List Items) */
+  font-size: 1.2em;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: red; }
 
 .jumbotron {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 100vh;
   margin: 0;
   /* Background */
-  background: #c73838; }
+  background-image: url("../img/esports-jumbo-grey.jpg");
+  background-size: 100%;
+  background-position: top center;
+  background-color: rgba(45, 113, 168, 0.75);
+  background-blend-mode: overlay;
+  /* multiply, overlay */ }
   .jumbotron .jumbo-text {
     color: white; }
+  .jumbotron .jumbo-button {
+    height: 100px;
+    width: 100px;
+    background-color: white; }
 
 .container-fluid {
   display: flex;
