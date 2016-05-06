@@ -1,111 +1,125 @@
 .container-fluid {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: lightgrey;
-
-  padding: 50px 100px;
-  @media screen and (max-width: 1200px) {
-    padding: 50px 0px;
-  }
-
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: lightgrey;
+    padding: 50px 100px;
+    @media screen and (max-width: 1200px) {
+        padding: 50px 0;
+    }
 }
-
 #overview {
-  display: block;
-  text-align: center;
-  background-color: rgb(43, 43, 43);
-  color: lightgrey;
-  h1 {
-    margin:10px;
-  }
-  h2 {
-    margin: 10px;
-  }
-  div {
-    padding: 15px;
-  }
-}
-
-#featurette {
-  background-color: rgb(28, 55, 70);
-  height: 1000px;
-  color: lightgrey;
-}
-
-#newsletter {
-  flex-direction: column;
-
-  background-image: url("../img/e2.jpg");
-  background-size: 100%;
-  background-position: center;
-
-  background-color: rgb(168, 45, 45);
-  background-blend-mode: overlay; /* multiply, overlay */
-
-  align-items: center;
-  color: white;
-  h1 {
-    margin: 0px 0px 20px 0px;
-  }
-  @media screen and (max-width: 625px) {
     display: block;
     text-align: center;
-    padding: 25px 25px;
-
-    background-image: none;
-  }
-
-  input[type="text"] {
-  border: 1px solid #ddd;
-  color: grey;
-  padding: 10px 15px;
-  width: 350px;
-  @include border-radius(10px 0 0 10px);
-  // @include border-radius(5px);
-  @media screen and (max-width: 625px) {
-    width: 100%;
-    text-align: center;
-    @include border-radius(5px);
+    // background-color: rgb(43, 43, 43);
+    background-color: black;
+    color: lightgrey;
+    @include box-shadow(2px -42px 113px 24px rgba(0,0,0,0.75));
+    h1 {
+        margin: 10px;
     }
-  }
-
-  input[type="submit"] {
-  border: none;
-  background-color: #da9021;
-  color: white;
-  padding: 11px;
-  width: 150px;
-  @include border-radius(0 10px 10px 0);
-  @include transition(all 0.2s ease);
-  @media screen and (max-width: 625px) {
-    margin-top: 15px;
-    width: 100%;
-    @include border-radius(5px);
-    background-color: #da9021;
-    border: none;
+    h2 {
+        margin: 10px;
     }
-  }
-
-  input[type="submit"]:hover {
-    background-color: lighten(#da9021, 10%);
-
-  }
+    div {
+        padding: 15px;
+    }
 }
-
-#team {
-  @extend #overview;
-  background-color: lightgrey;
-  color: rgb(43, 43, 43);
-
-  .team-member { /* team photos */
-    margin-top: 25px;
-    height: 150px;
-    width: 150px;
-    @media screen and (max-width: 475px) {
-      height: 100px;
-      width: 100px;
+.featurette {
+    background-color: rgb(28, 55, 70);
+    height: 400px;
+    color: lightgrey;
+}
+#feature-one {
+    background: #43cea2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #43cea2 , #185a9d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #43cea2 , #185a9d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#feature-two {
+    background: #6441A5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6441A5 , #2f165c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6441A5 , #2f165c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#feature-three {
+    background: #8E0E00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #8E0E00 , #4d130c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #8E0E00 , #4d130c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#newsletter {
+    flex-direction: column;
+    background-image: url("../img/e2.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-color: rgb(168, 45, 45);
+    background-blend-mode: overlay;
+    /* multiply, overlay */
+    align-items: center;
+    color: white;
+    h1 {
+        margin: 0 0 20px;
     }
-    @include border-radius(75px);
-  }
+    @media screen and (max-width: 625px) {
+        display: block;
+        text-align: center;
+        padding: 25px;
+        background-image: none;
+    }
+    input[type="text"] {
+        border: 1px solid #ddd;
+        color: grey;
+        padding: 10px 15px;
+        width: 350px;
+        @include border-radius(10px 0 0 10px);
+        // @include border-radius(5px);
+        @media screen and (max-width: 625px) {
+            width: 100%;
+            text-align: center;
+            @include border-radius(5px);
+        }
+    }
+    input[type="submit"] {
+        border: none;
+        background-color: #da9021;
+        color: white;
+        padding: 11px;
+        width: 150px;
+        @include border-radius(0 10px 10px 0);
+        @include transition(all 0.2s ease);
+        @media screen and (max-width: 625px) {
+            margin-top: 15px;
+            width: 100%;
+            @include border-radius(5px);
+            background-color: #da9021;
+            border: none;
+        }
+    }
+    input[type="submit"]:hover {
+        background-color: lighten(#da9021, 10%);
+    }
+}
+#team {
+    @extend #overview;
+    @include box-shadow(none);
+    background-color: lightgrey;
+    color: rgb(43, 43, 43);
+    .team-member {
+        /* team photos */
+        margin-top: 25px;
+        height: 150px;
+        width: 150px;
+        @media screen and (max-width: 475px) {
+            height: 100px;
+            width: 100px;
+        }
+        @include border-radius(75px);
+    }
 }

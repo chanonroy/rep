@@ -1,5 +1,8 @@
 /* all 0.5s ease */
 /* (5px) */
+.navbar {
+  border: none; }
+
 .navbar-default {
   /* Navigation Bar Colour */
   background-color: white; }
@@ -18,13 +21,10 @@
 
 .navbar-nav {
   /* Navigation Link Box Formatting */ }
-  @media screen and (min-width: 768px) {
-    .navbar-nav {
-      padding-top: 15px;
-      padding-bottom: 15px; } }
 
 .navbar-default .navbar-nav > li > a {
   /* Navigation Links (List Items) */
+  border: 3px solid transparent;
   font-size: 1.2em;
   font-weight: 500;
   -webkit-transition: all 0.3s ease;
@@ -32,9 +32,17 @@
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+  @media screen and (min-width: 768px) {
+    .navbar-default .navbar-nav > li > a {
+      padding-top: 25px;
+      padding-bottom: 25px; } }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: red; }
+  @media screen and (min-width: 768px) {
+    .navbar-default .navbar-nav > li > a:hover {
+      color: white;
+      background-color: grey; } }
 
 .jumbotron {
   display: flex;
@@ -45,17 +53,41 @@
   margin: 0;
   /* Background */
   background-image: url("../img/esports-jumbo-grey.jpg");
-  background-size: 100%;
-  background-position: top center;
-  background-color: rgba(45, 113, 168, 0.75);
+  background-size: cover;
+  background-position: left center;
+  overflow: hidden;
+  background-color: rgba(45, 142, 168, 0.75);
   background-blend-mode: overlay;
-  /* multiply, overlay */ }
+  /* multiply, overlay */
+  text-shadow: black 0.10em 0.10em 0.10em; }
   .jumbotron .jumbo-text {
-    color: white; }
-  .jumbotron .jumbo-button {
-    height: 100px;
-    width: 100px;
-    background-color: white; }
+    color: white;
+    text-align: center; }
+    .jumbotron .jumbo-text h2 {
+      margin-bottom: 65px; }
+    .jumbotron .jumbo-text .jumbo-button {
+      background-color: #a82d2d;
+      color: white;
+      text-decoration: none;
+      font-size: 1.3em;
+      padding: 15px 45px;
+      text-shadow: none;
+      margin-top: 50px;
+      -webkit-border-radius: 45px;
+      -moz-border-radius: 45px;
+      -ms-border-radius: 45px;
+      border-radius: 45px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    .jumbotron .jumbo-text .jumbo-button:hover {
+      color: white;
+      background-color: #da9021;
+      -webkit-box-shadow: 0px 0px 30px 2px #da9021;
+      -moz-box-shadow: 0px 0px 30px 2px #da9021;
+      box-shadow: 0px 0px 30px 2px #da9021; }
 
 .container-fluid {
   display: flex;
@@ -65,13 +97,16 @@
   padding: 50px 100px; }
   @media screen and (max-width: 1200px) {
     .container-fluid {
-      padding: 50px 0px; } }
+      padding: 50px 0; } }
 
 #overview, #team {
   display: block;
   text-align: center;
-  background-color: #2b2b2b;
-  color: lightgrey; }
+  background-color: black;
+  color: lightgrey;
+  -webkit-box-shadow: 2px -42px 113px 24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px -42px 113px 24px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px -42px 113px 24px rgba(0, 0, 0, 0.75); }
   #overview h1, #team h1 {
     margin: 10px; }
   #overview h2, #team h2 {
@@ -79,10 +114,34 @@
   #overview div, #team div {
     padding: 15px; }
 
-#featurette {
+.featurette {
   background-color: #1c3746;
-  height: 1000px;
+  height: 400px;
   color: lightgrey; }
+
+#feature-one {
+  background: #43cea2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #43cea2, #185a9d);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #43cea2, #185a9d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+#feature-two {
+  background: #6441A5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6441A5, #2f165c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6441A5, #2f165c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+#feature-three {
+  background: #8E0E00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #8E0E00, #4d130c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #8E0E00, #4d130c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 #newsletter {
   flex-direction: column;
@@ -95,12 +154,12 @@
   align-items: center;
   color: white; }
   #newsletter h1 {
-    margin: 0px 0px 20px 0px; }
+    margin: 0 0 20px; }
   @media screen and (max-width: 625px) {
     #newsletter {
       display: block;
       text-align: center;
-      padding: 25px 25px;
+      padding: 25px;
       background-image: none; } }
   #newsletter input[type="text"] {
     border: 1px solid #ddd;
@@ -148,6 +207,9 @@
     background-color: #e4a64a; }
 
 #team {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   background-color: lightgrey;
   color: #2b2b2b; }
   #team .team-member {

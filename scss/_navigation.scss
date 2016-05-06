@@ -1,3 +1,7 @@
+.navbar {
+  border: none;
+}
+
 .navbar-default { /* Navigation Bar Colour */
   background-color: white;
 }
@@ -17,17 +21,27 @@
 
 .navbar-nav { /* Navigation Link Box Formatting */
   @media screen and (min-width: 768px) {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    // padding-top: 5px;
+    // padding-bottom: 5px;
   }
 }
 
 .navbar-default .navbar-nav>li>a { /* Navigation Links (List Items) */
+  border: 3px solid transparent;
   font-size: 1.2em;
   font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
   @include transition(all 0.3s ease);
 }
 
 .navbar-default .navbar-nav>li>a:hover {
   color: red;
+  @media screen and (min-width: 768px) {
+    color: white;
+    background-color: grey;
+  }
 }
