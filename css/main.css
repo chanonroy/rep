@@ -19,9 +19,6 @@
       .navbar-brand img {
         height: 35px; } }
 
-.navbar-nav {
-  /* Navigation Link Box Formatting */ }
-
 .navbar-default .navbar-nav > li > a {
   /* Navigation Links (List Items) */
   border: 3px solid transparent;
@@ -42,7 +39,7 @@
   @media screen and (min-width: 768px) {
     .navbar-default .navbar-nav > li > a:hover {
       color: white;
-      background-color: grey; } }
+      background-color: #b31a09; } }
 
 .jumbotron {
   display: flex;
@@ -108,15 +105,16 @@
   -moz-box-shadow: 2px -42px 113px 24px rgba(0, 0, 0, 0.75);
   box-shadow: 2px -42px 113px 24px rgba(0, 0, 0, 0.75); }
   #overview h1, #team h1 {
-    margin: 10px; }
+    margin: 25px; }
   #overview h2, #team h2 {
     margin: 10px; }
   #overview div, #team div {
     padding: 15px; }
 
 .featurette {
+  display: block;
   background-color: #1c3746;
-  height: 400px;
+  text-align: center;
   color: lightgrey; }
 
 #feature-one {

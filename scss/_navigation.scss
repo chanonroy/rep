@@ -19,13 +19,6 @@
   }
 }
 
-.navbar-nav { /* Navigation Link Box Formatting */
-  @media screen and (min-width: 768px) {
-    // padding-top: 5px;
-    // padding-bottom: 5px;
-  }
-}
-
 .navbar-default .navbar-nav>li>a { /* Navigation Links (List Items) */
   border: 3px solid transparent;
   font-size: 1.2em;
@@ -42,6 +35,6 @@
   color: red;
   @media screen and (min-width: 768px) {
     color: white;
-    background-color: grey;
+    background-color: #b31a09;
   }
 }

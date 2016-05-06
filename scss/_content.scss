@@ -16,7 +16,7 @@
     color: lightgrey;
     @include box-shadow(2px -42px 113px 24px rgba(0,0,0,0.75));
     h1 {
-        margin: 10px;
+        margin: 25px;
     }
     h2 {
         margin: 10px;
@@ -25,9 +25,12 @@
         padding: 15px;
     }
 }
+
 .featurette {
+    display: block;
     background-color: rgb(28, 55, 70);
-    height: 400px;
+    // height: 500px;
+    text-align: center;
     color: lightgrey;
 }
 #feature-one {
@@ -60,8 +63,7 @@
     background-size: 100%;
     background-position: center;
     background-color: rgb(168, 45, 45);
-    background-blend-mode: overlay;
-    /* multiply, overlay */
+    background-blend-mode: overlay;   /* multiply, overlay */
     align-items: center;
     color: white;
     h1 {
