@@ -36,25 +36,25 @@
 #feature-one {
     background: #43cea2;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #43cea2 , #185a9d);
+    background: -webkit-linear-gradient(to top left, #43b1cf , #185a9d);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #43cea2 , #185a9d);
+    background: linear-gradient(to top left, #43b1cf , #185a9d);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #feature-two {
     background: #6441A5;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6441A5 , #2f165c);
+    background: -webkit-linear-gradient(to top right, #6441A5 , #2f165c);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6441A5 , #2f165c);
+    background: linear-gradient(to top right, #6441A5 , #2f165c);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #feature-three {
     background: #8E0E00;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #8E0E00 , #4d130c);
+    background: -webkit-linear-gradient(to top left, #8E0E00 , #42110b);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #8E0E00 , #4d130c);
+    background: linear-gradient(to top left, #8E0E00 , #42110b);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #newsletter {
@@ -123,5 +123,24 @@
             width: 100px;
         }
         @include border-radius(75px);
+    }
+    .fa {
+      color: grey;
+      @include transition(all 0.3s ease);
+    }
+    .fa-twitch:hover {
+      color: 	rgb(100, 65, 165);
+    }
+    .fa-linkedin-square:hover {
+      color: 	rgb(0, 119, 181);
+    }
+    .fa-twitter-square:hover {
+      color: 	rgb(85, 172, 238);
+    }
+    .fa-github-alt:hover {
+      color: 	rgb(217, 116, 43);
+    }
+    .fa-steam-square:hover {
+      color: black;
     }
 }

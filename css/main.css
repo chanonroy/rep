@@ -120,25 +120,25 @@
 #feature-one {
   background: #43cea2;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #43cea2, #185a9d);
+  background: -webkit-linear-gradient(to top left, #43b1cf, #185a9d);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #43cea2, #185a9d);
+  background: linear-gradient(to top left, #43b1cf, #185a9d);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 #feature-two {
   background: #6441A5;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6441A5, #2f165c);
+  background: -webkit-linear-gradient(to top right, #6441A5, #2f165c);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6441A5, #2f165c);
+  background: linear-gradient(to top right, #6441A5, #2f165c);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 #feature-three {
   background: #8E0E00;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #8E0E00, #4d130c);
+  background: -webkit-linear-gradient(to top left, #8E0E00, #42110b);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #8E0E00, #4d130c);
+  background: linear-gradient(to top left, #8E0E00, #42110b);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 #newsletter {
@@ -223,6 +223,23 @@
       #team .team-member {
         height: 100px;
         width: 100px; } }
+  #team .fa {
+    color: grey;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  #team .fa-twitch:hover {
+    color: #6441a5; }
+  #team .fa-linkedin-square:hover {
+    color: #0077b5; }
+  #team .fa-twitter-square:hover {
+    color: #55acee; }
+  #team .fa-github-alt:hover {
+    color: #d9742b; }
+  #team .fa-steam-square:hover {
+    color: black; }
 
 #footer {
   display: block;
@@ -235,11 +252,20 @@
       text-align: center; } }
   #footer h1, #footer h2 {
     color: lightgrey; }
-  #footer span {
+  #footer a {
     margin-right: 5px;
-    color: lightgrey; }
+    color: lightgrey;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  #footer a:hover {
+    color: #cb4033; }
   #footer #footer-links {
     margin: 25px 0 10px 0; }
+  #footer #footer-special span {
+    margin: 2px; }
   #footer #footer-copyright {
     margin: 10px 0 0 0; }
 

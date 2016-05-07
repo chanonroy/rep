@@ -11,13 +11,23 @@
   h1, h2 {
     color: lightgrey;
   }
-  span {
+  a {
     margin-right: 5px;
     color: lightgrey;
+    @include transition(all 0.3s ease);
+  }
+  a:hover {
+    color: #cb4033;
   }
 
   #footer-links {
     margin: 25px 0 10px 0;
+  }
+
+  #footer-special {
+    span {
+      margin: 2px;
+    }
   }
 
   #footer-copyright {
