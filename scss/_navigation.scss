@@ -32,9 +32,24 @@
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: red;
+  color: #DE2B26;
   @media screen and (min-width: 768px) {
     color: white;
-    background-color: #b31a09;
+    background-color: #DE2B26;
   }
+}
+
+/* --- Hamburger Bar --- */
+.navbar-default .navbar-toggle {
+  border-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+  .icon-bar {
+    background-color: #DE2B26;
+  }
+}
+.icon-bar {
+  @include transition(all 0.5s ease);
 }

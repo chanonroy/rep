@@ -35,11 +35,27 @@
       padding-bottom: 25px; } }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: red; }
+  color: #DE2B26; }
   @media screen and (min-width: 768px) {
     .navbar-default .navbar-nav > li > a:hover {
       color: white;
-      background-color: #b31a09; } }
+      background-color: #DE2B26; } }
+
+/* --- Hamburger Bar --- */
+.navbar-default .navbar-toggle {
+  border-color: white; }
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent; }
+  .navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #DE2B26; }
+
+.icon-bar {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .jumbotron {
   display: flex;
@@ -63,7 +79,7 @@
     .jumbotron .jumbo-text h2 {
       margin-bottom: 65px; }
     .jumbotron .jumbo-text .jumbo-button {
-      background-color: #a82d2d;
+      background-color: #DE2B26;
       color: white;
       text-decoration: none;
       font-size: 1.3em;
@@ -261,7 +277,7 @@
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease; }
   #footer a:hover {
-    color: #cb4033; }
+    color: #DE2B26; }
   #footer #footer-links {
     margin: 25px 0 10px 0; }
   #footer #footer-special span {

@@ -124,6 +124,11 @@
         }
         @include border-radius(75px);
     }
+    #sean-photo:hover {
+      .img {
+
+      }
+    }
     .fa {
       color: grey;
       @include transition(all 0.3s ease);
