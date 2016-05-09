@@ -28,10 +28,20 @@
 
 .featurette {
     display: block;
+    padding: 150px 5%;
+    @media screen and (max-width: 1200px) {
+        padding: 100px 10px;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 50px 10px;
+    }
     background-color: rgb(28, 55, 70);
     // height: 500px;
     text-align: center;
     color: lightgrey;
+    .feat-image {
+      @include border-radius(15px);
+    }
 }
 #feature-one {
     background: #43cea2;

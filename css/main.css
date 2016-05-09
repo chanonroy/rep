@@ -65,14 +65,14 @@
   height: 100vh;
   margin: 0;
   /* Background */
-  background-image: url("../img/esports-jumbo-grey.jpg");
+  background-image: url("../img/esports-jumbo-grey-blur.jpg");
   background-size: cover;
-  background-position: left center;
+  background-position: left top;
   overflow: hidden;
   background-color: rgba(45, 142, 168, 0.75);
   background-blend-mode: overlay;
   /* multiply, overlay */
-  text-shadow: black 0.10em 0.10em 0.10em; }
+  text-shadow: #404040 0.2em 0.2em 0.2em; }
   .jumbotron .jumbo-text {
     color: white;
     text-align: center; }
@@ -80,6 +80,7 @@
       margin-bottom: 65px; }
     .jumbotron .jumbo-text .jumbo-button {
       background-color: #DE2B26;
+      box-shadow: 0 6px 2px -2px #9f1c18;
       color: white;
       text-decoration: none;
       font-size: 1.3em;
@@ -129,9 +130,21 @@
 
 .featurette {
   display: block;
+  padding: 150px 5%;
   background-color: #1c3746;
   text-align: center;
   color: lightgrey; }
+  @media screen and (max-width: 1200px) {
+    .featurette {
+      padding: 100px 10px; } }
+  @media screen and (max-width: 768px) {
+    .featurette {
+      padding: 50px 10px; } }
+  .featurette .feat-image {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px; }
 
 #feature-one {
   background: #43cea2;
