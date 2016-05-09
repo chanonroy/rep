@@ -24,6 +24,7 @@
   border: 3px solid transparent;
   font-size: 1.2em;
   font-weight: 500;
+  color: #373738;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -67,12 +68,14 @@
   /* Background */
   background-image: url("../img/esports-jumbo-grey-blur.jpg");
   background-size: cover;
-  background-position: left top;
+  background-position: top;
   overflow: hidden;
   background-color: rgba(45, 142, 168, 0.75);
   background-blend-mode: overlay;
   /* multiply, overlay */
   text-shadow: #404040 0.2em 0.2em 0.2em; }
+  .jumbotron h1 {
+    font-weight: bold; }
   .jumbotron .jumbo-text {
     color: white;
     text-align: center; }
@@ -145,6 +148,8 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     border-radius: 15px; }
+  .featurette h1 {
+    font-weight: bold; }
 
 #feature-one {
   background: #43cea2;

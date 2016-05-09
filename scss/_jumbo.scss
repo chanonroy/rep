@@ -9,13 +9,17 @@
   /* Background */
   background-image: url("../img/esports-jumbo-grey-blur.jpg");
   background-size: cover;
-  background-position: left top;
+  background-position: top;
   overflow: hidden;
 
   background-color: rgba(45, 142, 168, 0.75);
   background-blend-mode: overlay; /* multiply, overlay */
 
   text-shadow: darken(grey, 25%) 0.20em 0.20em 0.20em;
+
+  h1 {
+    font-weight: bold;
+  }
 
   .jumbo-text {
     color: white;
